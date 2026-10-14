@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oak & Ember Coffee | Portfolio</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f8f5ef;
+      color: #342b23;
+      line-height: 1.7;
+    }
+
+    header {
+      padding: 24px 8%;
+      border-bottom: 1px solid #e5ddd1;
+    }
+
+    header a {
+      color: #342b23;
+      text-decoration: none;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: auto;
+      padding: 64px 24px;
+    }
+
+    .eyebrow {
+      color: #8b7055;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 12px;
+    }
+
+    h1 {
+      font-size: clamp(38px, 6vw, 64px);
+      line-height: 1.1;
+      font-weight: 500;
+      margin: 16px 0;
+    }
+
+    .intro {
+      max-width: 650px;
+      color: #766d62;
+      font-size: 18px;
+    }
+
+    .screenshots {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin: 40px 0;
+    }
+
+    figure {
+      margin: 0;
+    }
+
+    figure img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      border: 1px solid #e5ddd1;
+      box-shadow: 0 8px 24px #342b2310;
+    }
+
+    figcaption {
+      color: #766d62;
+      font-size: 14px;
+      margin-top: 10px;
+    }
+
+    .details {
+      border-top: 1px solid #e5ddd1;
+      padding-top: 28px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+    }
+
+    h2 {
+      font-size: 22px;
+      font-weight: 500;
+    }
+
+    .details p,
+    .details li {
+      color: #766d62;
+    }
+
+    footer {
+      text-align: center;
+      padding: 24px;
+      color: #766d62;
+      border-top: 1px solid #e5ddd1;
+      font-size: 13px;
+    }
+
+    @media (max-width: 650px) {
+      main {
+        padding: 40px 20px;
+      }
+
+      .screenshots,
+      .details {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html">OAK & EMBER COFFEE</a>
+  </header>
+
+  <main>
+    <p class="eyebrow">Selected Project · 01</p>
+
+    <h1>A Warm Welcome<br>to Oak & Ember</h1>
+
+    <p class="intro">
+      A concept website for a neighborhood coffee shop,
+      designed around warm colors, clear typography,
+      and a welcoming browsing experience.
+    </p>
+
+    <section class="screenshots" aria-label="Website previews">
+      <figure>
+        <img src="desktop-preview.png"
+             alt="Desktop preview of the coffee shop website">
+        <figcaption>01 — Desktop experience</figcaption>
+      </figure>
+
+      <figure>
+        <img src="mobile-preview.png"
+             alt="Mobile preview of the coffee shop website">
+        <figcaption>02 — Mobile experience</figcaption>
+      </figure>
+    </section>
+
+    <section class="details">
+      <div>
+        <h2>Project Overview</h2>
+        <p>
+          This self-initiated concept project explores
+          how a small café can present its menu, story,
+          and visitor information in a simple, inviting way.
+        </p>
+      </div>
+
+      <div>
+        <h2>Highlights</h2>
+        <ul>
+          <li>Responsive desktop and mobile layouts</li>
+          <li>Warm, understated visual design</li>
+          <li>Menu, about, and visit sections</li>
+          <li>Built with HTML and CSS</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    Concept project · Designed and built for practice
+  </footer>
+</body>
+</html>
